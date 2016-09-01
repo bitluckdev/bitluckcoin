@@ -2,23 +2,19 @@
 
 Copyright (c) 2014-2016 BitLuckCoin Developers
 
-### URGENT!
-Please update all wallet to 1.0.2.1 (Protocol Version : 60005)
-Old version of wallet (1.0.1.2) will not sync anymore in coinnetwork.
-
 
 ##SPECIFICATIONS
 
-- **POS INTEREST:** PoS (Proof-of-Stake) 5% yearly (from non-reserved wallet balance)
+- **POS INTEREST:** PoS (Proof-of-Stake) 3% yearly (from non-reserved wallet balance)
 - **ALGORITHM:** Scrypt
 - **SYMBOL:** BTL
 - **BLOCK TIME:** 60 sec
 - **LAST POW BLOCK:** 3600
-- **TOTAL MONEY SUPPLY:** 20,000,000,000 BTL
-- **BLOCK REWARD:** BLOCKS 1-10 (premine): each 1,000,000,000 BTL / BLOCKS 11~3600: 100 BTL
+- **TOTAL MONEY SUPPLY:** 5,000,000,000 BTL
+- **BLOCK REWARD:** BLOCKS 1-10 (premine): each 500,000,000 BTL / BLOCKS 11~3600: 100 BTL
 - **COIN POS AGE:** Min. 1 hour / Max. unlimited
-- **RPC PORT:** 35288 (testnet 45288 )
-- **P2P PORT:** 35289 (testnet 45289 )
+- **RPC PORT:** 24288 (testnet 34288 )
+- **P2P PORT:** 24289 (testnet 34289 )
 - **Coin maturity:** 100 confirmations
 
 
