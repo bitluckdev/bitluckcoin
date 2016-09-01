@@ -1,0 +1,9 @@
+Building BitLuckCoin
+
+See doc/readme-qt.rst for instructions on building BitLuckCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of BitLuckCoin.
+
+See doc/build-*.txt for instructions on building bitluckcoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of BitLuckCoin.
