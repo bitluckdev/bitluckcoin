@@ -24,7 +24,7 @@ SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
     ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
-    ui->payTo->setPlaceholderText(tr("Enter a BitLuckCoin address (e.g. HPHWwxzA9gfTKR4CU1Dfgp5W8C8QSviVk8)"));
+    ui->payTo->setPlaceholderText(tr("Enter a BitLuckCoin address (e.g. BBmfg3yR2eQ3e5yWnzgjC3uBJyLLT3Qxu2)"));
     ui->narration->setPlaceholderText(tr("Enter a short note to send with payment (max 24 characters)"));
 #endif
     setFocusPolicy(Qt::TabFocus);
