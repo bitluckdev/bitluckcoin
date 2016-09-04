@@ -39,7 +39,7 @@ static const int64_t COIN = 100000000;
 static const int64_t CENT = 1000000;
 
 /* for Genesis Block */
-#define loop                for (;;)
+//#define loop                for (;;)
 /* for Genesis Block End */
 
 #define BEGIN(a)            ((char*)&(a))
