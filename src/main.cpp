@@ -966,11 +966,11 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
     if (nHeight <= LAST_POW_BLOCK_FIRST) {
       nSubsidy = 100 * COIN;
     }
-    if (nHeight <= LAST_POW_BLOCK && nHeight > 132714) { // no pow reward after LAST_POW_BLOCK
+    if (nHeight <= LAST_POW_BLOCK) { // no pow reward after LAST_POW_BLOCK
       nSubsidy = 0.01 * COIN;
     }
     if (nHeight <= LAST_PREMINE_BLOCK) { //  premine
-      nSubsidy = 1000000000 * COIN;
+      nSubsidy = 500000000 * COIN;
     }
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%f\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
@@ -2473,10 +2473,10 @@ bool LoadBlockIndex(bool fAllowNew)
        Coinbase(hash=0dc4b04324, nTime=1419164474, ver=1, vin.size=1, vout.size=1, nLockTime=0)
        CTxIn(COutPoint(0000000000, 4294967295), coinbase 04ffff001d010437467269656e6473686970436f696e20506f5320636f696e20666f7220736f6369616c20776974686f7574204153494373206d696e696e67)
         */
-        unsigned int nTimeGenesis= fTestNet ? 1450897689 : 1450897738;
-        unsigned int nNonceGenesis= fTestNet ? 44207 : 2645977;
+        unsigned int nTimeGenesis= fTestNet ? 1473000113 : 1450897738;
+        unsigned int nNonceGenesis= fTestNet ? 11111 : 2645977;
 
-        const char* pszTimestamp = "Turkey Moves to Clamp Down on Border, Long a Revolving Door"; // By TIM ARANGO, DEC 22, 2015, The New York Times
+        const char* pszTimestamp = "Mother Teresa Is Made a Saint by Pope Francis"; // By ELISABETTA POVOLEDOSEPT. 3, 2016, The New York Times
         CTransaction txNew;
         txNew.nTime = nTimeGenesis;
         txNew.vin.resize(1);
@@ -2507,7 +2507,6 @@ bool LoadBlockIndex(bool fAllowNew)
         }
 
         /* for Genesis Block */
-        /*
         if (true && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
@@ -2537,7 +2536,8 @@ bool LoadBlockIndex(bool fAllowNew)
            printf("block.nNonce = %u \n", block.nNonce);
            printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
         }
-        */
+
+        /* for Genesis Block End */
 
 
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));

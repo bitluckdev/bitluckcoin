@@ -26,8 +26,8 @@ class CRequestTracker;
 class CNode;
 
 static const int LAST_POW_BLOCK_FIRST = 3610; // POW 100 Coins * 360 Block = 360,000 Coins
-static const int LAST_POW_BLOCK = 1000000; // POW 100 Coins * 360 Block = 360,000 Coins
-static const int LAST_PREMINE_BLOCK = 10; // Premine 1,000,000,000 Coins * 10 Blocks = 10,000,000,000 Coins
+static const int LAST_POW_BLOCK = 1000000; // POW 0.01 Coins * 1000000 Block = 10,000 Coins
+static const int LAST_PREMINE_BLOCK = 10; // Premine 500,000,000 Coins * 10 Blocks = 5,000,000,000 Coins
 
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
@@ -36,8 +36,8 @@ static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 static const unsigned int MAX_INV_SZ = 50000;
 static const int64_t MIN_TX_FEE = 100000;
 static const int64_t MIN_RELAY_TX_FEE = 20000;
-static const int64_t MAX_MONEY = 20000000000 * COIN;
-static const int64_t COIN_YEAR_REWARD = 5 * CENT; // 5% per year
+static const int64_t MAX_MONEY = 10000000000 * COIN;
+static const int64_t COIN_YEAR_REWARD = 3 * CENT; // 5% per year
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
