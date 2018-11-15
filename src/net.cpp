@@ -1287,8 +1287,8 @@ void MapPort()
 // The second name should resolve to a list of seed addresses.
 
 static const char *strDNSSeed[][2] = {
-    {"BitLuckCoin 1st Seed Server","45.32.35.123"},
-    {"BitLuckCoin 2nd Seed Server","45.76.96.149"},
+    {"BitLuckCoin 1st Seed Server","167.179.79.10"},
+    {"BitLuckCoin 2nd Seed Server","45.76.196.129"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
